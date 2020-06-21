@@ -1,9 +1,9 @@
 // iterators4.rs
 
-// I AM NOT DONE
 
 pub fn factorial(num: u64) -> u64 {
     // Complete this function to return the factorial of num
+    (1..=num).fold(1, |ans, i| ans * i)
     // Do not use:
     // - return
     // Try not to use:
